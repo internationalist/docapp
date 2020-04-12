@@ -1,0 +1,56 @@
+.banner {
+	background-image: url('../images/122203613_l.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:#ecf0f1;
+}
+
+.bodystyle {
+	background-color:#dcdde1;
+	color:#353b48;
+}
+
+.linkstyle {
+	color:#ecf0f1 !important;
+}
+
+.linkstyle:hover { 
+	color: #ecf0f1 !important; 
+	text-decoration: underline !important;	
+}
+/*.linkstyle:visited { color: #ecf0f1 !important; }*/
+
+.linkstyleactive {
+	color: #ecf0f1 !important; 
+	text-decoration: underline !important;
+	font-weight:bold !important;
+}
+
+.navstyle {
+	background-color:#487eb0;
+	color:#2c3e50;
+}
+
+.fixednav {
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:100;
+	visibility:hidden;
+}
+
+.brand {
+  background-image: url('../images/pngguru.com.png');
+  display: block;
+  /* Other styles here */
+}
+
+.btn-success {
+	background-color:#27ae60 !important;
+	border-color:#27ae60 !important;
+}
+
+.footerstyle {
+	background-color:#2f3640; 
+	color:white;
+}
