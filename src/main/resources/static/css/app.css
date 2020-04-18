@@ -1,5 +1,5 @@
 .banner {
-	background-image: url('../images/122203613_l.jpg');
+	background-image: url('../images/122203613_l-2.jpg');
 	background-repeat:no-repeat;
 	background-size:cover;
 	color:#ecf0f1;
@@ -53,4 +53,25 @@
 .footerstyle {
 	background-color:#2f3640; 
 	color:white;
+}
+
+.profile {
+	background-color:#dcdde1;
+}
+
+.profile_img {
+	width:auto;
+	height:240px;
+}
+.card {
+	border:none !important;
+}
+
+.thumbnail-body {
+	background-color:#bdc3c7;
+	color:#2c3e50;
+}
+.textwrap {
+  float: right;
+  margin: 10px;      
 }

@@ -24,9 +24,9 @@
 				      </li>
 				  </template>                
 			    </ul>
-				<form class="form-inline">
+				<!--<form class="form-inline">
 					<input class="form-control mr-sm-2" type="text" placeholder="Search">
-				</form>			    
+				</form>-->			    
 			  </div>  
 			</nav>
 			<nav id="nav" class="navbar navbar-dark navbar-expand-sm navstyle">
@@ -54,9 +54,9 @@
 				      </li>
 				  </template>                
 			    </ul>
-				<form class="form-inline">
+				<!--<form class="form-inline">
 					<input class="form-control mr-sm-2" type="text" placeholder="Search">
-				</form>			    
+				</form>-->			    
 			  </div>  
 			</nav></div>`,
 		  data:vueNav,

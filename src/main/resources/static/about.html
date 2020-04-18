@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/app.css?v=1.0.11">
+  <link rel="stylesheet" href="css/app.css">
      <script>
   		menuName = 'About';
      </script> 
@@ -14,7 +14,7 @@
   	<script src="js/bootstrap.min.js"></script>
   	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   	<script src="js/app.js?v=1.2.05"></script>
-  	<script src="js/vuecomponents.js?v=1.2.14"></script>  	  	
+  	<script src="js/vuecomponents.js"></script>  	  	
     <style>
 	  .fakeimg {
 	    height: auto;
@@ -24,7 +24,7 @@
 </head>
 <body class="bodystyle">
 
-<div id="banner" class="jumbotron text-center" style="margin-bottom:0;">
+<div id="banner" class="jumbotron text-center banner" style="margin-bottom:0;">
 		<div class="align-middle">
 			<h2 style="opacity:1;">Deb Labs.</h2>
 			<p>Precision Cancer Research!</p>			
@@ -34,21 +34,25 @@
 <div id="nav-component"><dynamicnav></dynamicnav></div>
 <div class="container pt-3" style="overflow:true;">
 	<div class="row">
-		<div class="col">
-			<div class="card mx-auto" style="width:50vmin;">
-			  <img src="images/Drdeb.png" class="img-thumbnail" alt="...">
+		<div class="col-lg-3 col-md-4 col-6">
+			<div class="card mx-auto profile">
+			  <img src="images/sdeb_profile.png" class="img-thumbnail img-fluid profile profile_img" style="width:auto;height:240px;" alt="...">
 			  <div class="card-body">
-			    <p class="card-text"><h4>Dr. Sumitra Deb</h4></p>
-			    <p class="card-text"><h5>Professor of microbiology</h5></p>
+			    <p class="card-text"><h5>Dr. Sumitra Deb</h5>
+			    <h6>Professor of microbiology</h6></p>
+			    <hr/>
+			    <p class="card-text">Lorem Ipsum dolor. Lorem Ipsum dolor.Lorem Ipsum dolor.Lorem Ipsum dolor.</p>
 			  </div>
 			</div>			
 		</div>
-		<div class="col">
-			<div class="card mx-auto" style="width:50vmin;">
-			  <img src="images/drspdeb.png" class="img-thumbnail" alt="...">
+		<div class="col-lg-3 col-md-4 col-6">
+			<div class="card mx-auto profile">
+			  <img src="images/drspdeb_profile.png" class="img-thumbnail img-fluid profile profile_img" alt="...">
 			  <div class="card-body">
-			    <p class="card-text"><h4>Dr. Swati Palit Deb</h4></p>
-			    <p class="card-text"><h5>Associate professor of microbiology</h5></p>
+			    <p class="card-text"><h5>Dr. Swati Palit Deb</h5>
+			    <h6>Assoc. professor of microbiology</h6></p>
+			    <hr/>
+			    <p class="card-text">Lorem Ipsum dolor. Lorem Ipsum dolor.Lorem Ipsum dolor.Lorem Ipsum dolor.</p>			    
 			  </div>
 			</div>			
 		</div>		
