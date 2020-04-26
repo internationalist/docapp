@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>org.docsite</groupId>
 	<artifactId>docapp</artifactId>
+	<packaging>war</packaging>	
 	<version>0.0.1-SNAPSHOT</version>
 	<name>docapp</name>
 	<description>Sprin boot project for document based applicaton.</description>

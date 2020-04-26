@@ -21,10 +21,19 @@
 	    width:100%;
 	  }
     </style>
+	<script>
+		menuName = 'Our Lab';
+		imageLazyLoad("../images/DSC00477-2.jpg",
+				()=>{
+					document.getElementById('carousel-1').src = "../images/DSC00477-2.JPG"
+					removeClass('carousel-1', 'carouselImgLoading');
+					addClass('carousel-1', 'carouselImg');
+				});
+	</script>
 </head>
 <body class="bodystyle">
 
-<div id="banner" class="jumbotron text-center banner" style="margin-bottom:0;">
+<div id="banner" class="jumbotron text-center" style="margin-bottom:0;">
 		<div class="align-middle">
 			<h2 style="opacity:1;">Deb Labs.</h2>
 			<p>Precision Cancer Research!</p>			

@@ -5,6 +5,16 @@
 	color:#ecf0f1;
 }
 
+.carouselImgLoading {
+	width:100%;
+	height:30vmax;
+}
+
+.carouselImg {
+	width:747px;
+	height:500px;
+}
+
 .bodystyle {
 	background-color:#dcdde1;
 	color:#353b48;

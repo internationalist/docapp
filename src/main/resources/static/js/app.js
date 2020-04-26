@@ -8,11 +8,16 @@ var menuName;
 
 function init() {
 	
-	  var img = new Image();
-	  img.src = "../images/122203613_l.jpg";
-	  img.addEventListener('load', function(){
+	  //var img = new Image();
+	  //img.src = "../images/122203613_l-2.jpg";
+	  /*img.addEventListener('load', function(){
+		  console.log("image loaded");
 		  addClass('banner', 'banner');
-	  });
+	  });*/
+	 imageLazyLoad("../images/122203613_l-2.jpg", ()=>{
+		  console.log("image loaded");
+		  addClass('banner', 'banner');
+	 });
 	
 	  new Vue({el:'#nav-component'});
 	  new Vue({el:'#footer-component'});
@@ -28,6 +33,12 @@ function init() {
 		      ticking = true;
 		    }
 	 });
+}
+
+function imageLazyLoad(imgsrc, callback) {
+	  let img = new Image();
+	  img.src = imgsrc;
+	  img.addEventListener('load', callback);
 }
 	  
 function fixNavBarOnScroll() {
@@ -74,17 +85,25 @@ function addClass(id, className) {
 	  }
 }
 
+function removeClass(id, className) {
+	  let element, arr;
+	  element = document.getElementById(id);
+	  let classNames = element.className;
+	  classNames = className.replace(className, '');
+	  element.className = className;
+}
+
 function vueNav() {
 	let menuObject = {
 		menu: [
 			{name:'Our Lab', selected:false, link:'index.html'},
-			{name:'Research Areas', selected:false,
-				dropdown:[{link:'research_spdeb.html', name:'Dr. Swati Deb\'s research'},
-				{link:'research_sdeb.html', name:'Dr. Sumitra Deb\'s research'}]
+			{name:'Sumitra Deb\'s Lab', selected:false,
+				dropdown:[{link:'research_sdeb.html', name:'Research interest'},
+				{link:'publications_sdeb.html', name:'Publications'}]
 			
 			},	  				
-			{name:'Publications', selected:false,dropdown:[{link:'publications_spdeb.html', name:'Dr. Swati Deb\'s publications'},
-				{link:'publications_sdeb.html', name:'Dr. Sumitra Deb\'s publications'}]},
+			{name:'Swati Palit Deb\'s Lab', selected:false,dropdown:[{link:'research_spdeb.html', name:'Research interest'},
+				{link:'publications_spdeb.html', name:'Publications'}]},
 			{name:'About', selected:false, link:'about.html'}
 		]
 	};
