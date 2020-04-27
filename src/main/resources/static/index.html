@@ -5,35 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/app.css"> 
-  <script>
-  	menuName = 'Our Lab';
-  </script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  	<script src="js/bootstrap.min.js"></script>
-  	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  	<script src="js/app.js"></script>
-  	<script src="js/vuecomponents.js"></script>  	  	
-    <style>
-	  .fakeimg {
-	    height: auto;
-	    width:100%;
-	  }
-    </style>
-	<script>
-		menuName = 'Our Lab';
-		imageLazyLoad("../images/DSC00477-2.jpg",
-				()=>{
-					document.getElementById('carousel-1').src = "../images/DSC00477-2.JPG"
-					removeClass('carousel-1', 'carouselImgLoading');
-					addClass('carousel-1', 'carouselImg');
-				});
-	</script>
+  <link rel="stylesheet" href="css/app.css">  	  	
 </head>
 <body class="bodystyle">
 
-<div id="banner" class="jumbotron text-center" style="margin-bottom:0;">
+<div id="banner" class="jumbotron text-center" style="margin-bottom:0;background-color:#2f1480;">
 		<div class="align-middle">
 			<h2 style="opacity:1;">Deb Labs.</h2>
 			<p>Precision Cancer Research!</p>			
@@ -48,7 +24,7 @@
 		  <div class="carousel-inner">
 		    <div class="carousel-item active">
 				<div class="card" style="background-color:#192a56;color:white;">
-				  <img src="images/DSC00477-2.JPG" class="card-img-top" alt="...">
+				  <img id='carousel-1' class="card-img-top" alt="..." style="width:100%;height:auto;">
 				  <div class="card-body">
 				    <p class="card-text font-weight-bold">Researchers at DebLabs have been at the forefront of cancer research for over 25 years.</p>
 				  </div>
@@ -56,7 +32,7 @@
 		    </div>
 		    <div class="carousel-item">
 				<div class="card" style="background-color:#192a56;color:white;">
-				  <img src="images/shutterstock_599450876-1-750x500.jpg" class="card-img-top" alt="...">
+				  <img src="images/shutterstock_599450876-1-750x500.jpg" class="card-img-top" alt="..." style="width:100%;height:auto;;">
 				  <div class="card-body mx autos">
 				    <p class="card-text font-weight-bold">Scientists have discovered how the most important gene in preventing human cancer, p53, is able to stop the development of lymphoma and potentially other types of cancer.</p>
 				  </div>
@@ -93,3 +69,22 @@
 
 </body>
 </html>
+  <script>
+  	menuName = 'Our Lab';
+  </script>
+        <script src="js/jquery.min.js"></script>
+  	<script src="js/popper.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/vue.min.js"></script>
+  	<script src="js/app.min.js"></script>
+  	<script src="js/vuecomponents.min.js"></script>
+	<script>
+	$(document).ready(()=>{
+		imageLazyLoad("images/DSC00477-2.JPG",
+				()=>{
+					document.getElementById('carousel-1').src = "images/DSC00477-2.JPG"
+					removeClass('carousel-1', 'carouselImgLoading');
+					addClass('carousel-1', 'carouselImg');
+				});		
+	});
+	</script>  	

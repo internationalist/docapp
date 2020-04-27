@@ -7,14 +7,7 @@ var menuName;
 
 
 function init() {
-	
-	  //var img = new Image();
-	  //img.src = "../images/122203613_l-2.jpg";
-	  /*img.addEventListener('load', function(){
-		  console.log("image loaded");
-		  addClass('banner', 'banner');
-	  });*/
-	 imageLazyLoad("../images/122203613_l-2.jpg", ()=>{
+	 imageLazyLoad("images/122203613_l-2.jpg", ()=>{
 		  console.log("image loaded");
 		  addClass('banner', 'banner');
 	 });
