@@ -49,6 +49,13 @@
 	visibility:hidden;
 }
 
+.skeleton {
+	width:100%;
+	height:30vmax;
+	background-color:grey;
+}
+
+
 .brand {
   background-image: url('../images/pngguru.com.png');
   display: block;
