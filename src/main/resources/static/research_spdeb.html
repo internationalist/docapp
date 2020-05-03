@@ -21,7 +21,8 @@
 	<div class="row">
 	  <div class="col-lg">
 	      <div>
-	          <img src="images/drspdeb.png" class="img-thumbnail thumbnail-body" alt="Lights" style="width:300px;height:auto;">
+	          <img id="spdeb_profile" class="img-thumbnail thumbnail-body" alt="Lights" style="width:300px;height:auto;display:none;">
+	          <img id="spdeb_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">	          
 	          <div class="caption">
 	            <p>Dr. Swati Palit Deb</p>
 	          </div>
@@ -115,13 +116,22 @@
 </body>
 </html>
 
- <script>
-	menuName = 'Swati Palit Deb\'s Lab';
- </script>
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/vue.min.js"></script>
 <script src="js/app.min.js"></script>
 <script src="js/vuecomponents.min.js"></script>
-
+<script>
+	menuName = 'Swati Palit Deb\'s Lab';
+	$(document).ready(()=>{
+		imageLazyLoad("images/drspdeb.png",
+				()=>{
+					let skeleton = document.getElementById('spdeb_profile_skeleton');
+					let img = document.getElementById('spdeb_profile');
+					img.src = "images/drspdeb.png"
+					skeleton.style.display = 'none';
+					img.style.display = 'block';
+				});
+	});	
+ </script>
