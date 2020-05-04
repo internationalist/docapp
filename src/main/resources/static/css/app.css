@@ -92,3 +92,11 @@
   float: right;
   margin: 10px;      
 }
+
+figure {
+    display: table;
+    width: 1px; /* This can be any width, so long as it's narrower than any image */
+}
+img, figcaption {
+    display: table-row;
+}
