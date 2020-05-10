@@ -97,6 +97,7 @@ function vueNav() {
 			},	  				
 			{name:'Swati Palit Deb\'s Lab', selected:false,dropdown:[{link:'research_spdeb.html', name:'Research interest'},
 				{link:'publications_spdeb.html', name:'Publications'}]},
+			{name:'Collaborators', selected:false, link:'collaborators.html'},
 			{name:'About', selected:false, link:'about.html'}
 		]
 	};
