@@ -100,3 +100,9 @@ figure {
 img, figcaption {
     display: table-row;
 }
+
+.hideshowtoggle {
+	cursor: pointer;
+	color:blue;
+	margin-left:2px;
+}
