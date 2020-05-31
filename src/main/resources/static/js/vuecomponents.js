@@ -74,7 +74,11 @@
 	  Vue.component('footermodule', {
 		 template:`
 			 		<div class="jumbotron text-center footerstyle" style="margin-bottom:0">
-			 	   	<span>© <a href='https://www.upwork.com/freelancers/~017c3476499b7734d2'>Arnab Roy Productions Inc.</a></span> 
+		  				<div class="container">
+		  					<div class="row">
+		  						<span>© <a href='https://www.upwork.com/freelancers/~017c3476499b7734d2'>Arnab Roy Productions Inc.</a></span>
+		  					</div>git st
+		  				</div>
 			 	   </div>`,
 		 data:function() {
 			 return {};
