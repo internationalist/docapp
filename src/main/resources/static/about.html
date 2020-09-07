@@ -159,14 +159,6 @@
 					skeleton.style.display = 'none';
 					img.style.display = 'block';
 				});
-		imageLazyLoad("images/Omar_profile.png",
-				()=>{
-					let skeleton = document.getElementById('omar_profile_skeleton');
-					let img = document.getElementById('omar_profile');
-					img.src = "images/Omar_profile.png"
-					skeleton.style.display = 'none';
-					img.style.display = 'block';
-				});
 		imageLazyLoad("images/Victoria_profile.png",
 				()=>{
 					let skeleton = document.getElementById('victoria_profile_skeleton');
@@ -175,22 +167,7 @@
 					skeleton.style.display = 'none';
 					img.style.display = 'block';
 				});
-		imageLazyLoad("images/Shilpa_profile.png",
-				()=>{
-					let skeleton = document.getElementById('shilpa_profile_skeleton');
-					let img = document.getElementById('shilpa_profile');
-					img.src = "images/Shilpa_profile.png"
-					skeleton.style.display = 'none';
-					img.style.display = 'block';
-				});
-		imageLazyLoad("images/drspdeb_profile.png",
-				()=>{
-					let skeleton = document.getElementById('spdeb_profile_skeleton');
-					let img = document.getElementById('spdeb_profile');
-					img.src = "images/drspdeb_profile.png"
-					skeleton.style.display = 'none';
-					img.style.display = 'block';
-				});
+
 		imageLazyLoad("images/Emalee_profile.png",
 				()=>{
 					let skeleton = document.getElementById('emalee_profile_skeleton');
@@ -199,16 +176,9 @@
 					skeleton.style.display = 'none';
 					img.style.display = 'block';
 				});
-		imageLazyLoad("images/John_profile.png",
-				()=>{
-					let skeleton = document.getElementById('john_profile_skeleton');
-					let img = document.getElementById('john_profile');
-					img.src = "images/John_profile.png"
-					skeleton.style.display = 'none';
-					img.style.display = 'block';
-				});
-		let profiles = ['yeeA_profile', 'vTra_profile', 'graceM_profile', 'mehdi_profile', 'annaB_profile', 'meganT_profile'];
-		let paths = ['images/YeeAung.jpg','images/VyTra.jpg','images/GraceMavodza.jpg','images/mehdiAbed.jpg', 'images/AnnaBerberoglu.jpg', 'images/MeganT.jpg'];
+
+		let profiles = ['yeeA_profile', 'vTra_profile', 'graceM_profile'];
+		let paths = ['images/YeeAung.jpg','images/VyTra.jpg','images/GraceMavodza.jpg'];
 		
 		for(let i = 0; i < profiles.length; i++) {
 			lazyLoadCaller(profiles[i], paths[i]);	
