@@ -98,7 +98,8 @@ function vueNav() {
 			{name:'Swati Palit Deb\'s Lab', selected:false,dropdown:[{link:'research_spdeb.html', name:'Research interest'},
 				{link:'publications_spdeb.html', name:'Publications'}]},
 			{name:'Collaborators', selected:false, link:'collaborators.html'},
-			{name:'About', selected:false, link:'about.html'}
+			{name:'About', selected:false,dropdown:[{link:'about.html', name:'Sumitra Deb\'s Team'},
+			                        				{link:'about2.html', name:'Swati Palit Deb\'s Team'}]}
 		]
 	};
 	let index = matchArrayOnValue(menuObject.menu, 'name', menuName);
