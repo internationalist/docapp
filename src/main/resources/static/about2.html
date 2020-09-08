@@ -62,29 +62,16 @@
 	<div class="row">
 		<div class="col-lg-6">
 			<div class="card mx-auto profile">
-			  <img id="john_profile" class="img-thumbnail img-fluid profile profile_img" style="width:298px;height:auto;display:none;" alt="...">
-			  <img id="john_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
+			  <img id="meganT_profile" class="img-thumbnail img-fluid profile profile_img" style="width:302px;height:auto;display:none;" alt="...">
+			  <img id="meganT_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
 			  <div class="card-body">
-			    <p class="card-text"><h5>John Anthony</h5>
-			    <h6>Undergraduate researcher</h6></p>
-			    <p class="card-text"></p>
-			  </div>
-			</div>			
-		</div>
-		<div class="col-lg-6">
-			<div class="card mx-auto profile">
-			  <img id="omar_profile" class="img-thumbnail img-fluid profile profile_img" style="width:302px;height:auto;display:none;" alt="...">
-			  <img id="omar_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
-			  <div class="card-body">
-			    <p class="card-text"><h5>Omar Hassan</h5>
-				    <h6>Undergraduate researcher</h6>
+			    <p class="card-text"><h5>Megan Thompson</h5>
+				    <h6>Graduate researcher</h6>
 				</p>
 			    <p class="card-text"></p>
 			  </div>
 			</div>			
-		</div>				
-	</div>
-	<div class="row">
+		</div>	
 		<div class="col-lg-6">
 			<div class="card mx-auto profile">
 			  <img id="mehdi_profile" class="img-thumbnail img-fluid profile profile_img" style="width:298px;height:auto;display:none;" alt="...">
@@ -96,26 +83,14 @@
 			  </div>
 			</div>			
 		</div>
+	</div>
+	<div class="row">
 		<div class="col-lg-6">
 			<div class="card mx-auto profile">
 			  <img id="annaB_profile" class="img-thumbnail img-fluid profile profile_img" style="width:274px;height:auto;display:none;" alt="...">
 			  <img id="annaB_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
 			  <div class="card-body">
 			    <p class="card-text"><h5>Anna Barberoglu</h5>
-				    <h6>Undergraduate researcher</h6>
-				</p>
-			    <p class="card-text"></p>
-			  </div>
-			</div>			
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-6">
-			<div class="card mx-auto profile">
-			  <img id="meganT_profile" class="img-thumbnail img-fluid profile profile_img" style="width:302px;height:auto;display:none;" alt="...">
-			  <img id="meganT_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
-			  <div class="card-body">
-			    <p class="card-text"><h5>Megan Thompson</h5>
 				    <h6>Undergraduate researcher</h6>
 				</p>
 			    <p class="card-text"></p>
@@ -142,15 +117,6 @@
 	<script>
 	$(document).ready(()=>{
 
-		imageLazyLoad("images/Omar_profile.png",
-				()=>{
-					let skeleton = document.getElementById('omar_profile_skeleton');
-					let img = document.getElementById('omar_profile');
-					img.src = "images/Omar_profile.png"
-					skeleton.style.display = 'none';
-					img.style.display = 'block';
-				});
-
 		imageLazyLoad("images/Shilpa_profile.png",
 				()=>{
 					let skeleton = document.getElementById('shilpa_profile_skeleton');
@@ -167,14 +133,7 @@
 					skeleton.style.display = 'none';
 					img.style.display = 'block';
 				});
-		imageLazyLoad("images/John_profile.png",
-				()=>{
-					let skeleton = document.getElementById('john_profile_skeleton');
-					let img = document.getElementById('john_profile');
-					img.src = "images/John_profile.png"
-					skeleton.style.display = 'none';
-					img.style.display = 'block';
-				});
+
 		let profiles = ['mehdi_profile', 'annaB_profile', 'meganT_profile'];
 		let paths = ['images/mehdiAbed.jpg', 'images/AnnaBerberoglu.jpg', 'images/MeganT.jpg'];
 		

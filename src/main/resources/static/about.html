@@ -62,29 +62,16 @@
 	<div class="row">
 		<div class="col-lg-6">
 			<div class="card mx-auto profile">
-			  <img id="victoria_profile" class="img-thumbnail img-fluid profile profile_img" style="width:311px;height:auto;display:none;" alt="...">
-			  <img id="victoria_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
+			  <img id="graceM_profile" class="img-thumbnail img-fluid profile profile_img" style="width:240px;height:auto;display:none;" alt="...">
+			  <img id="graceM_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
 			  <div class="card-body">
-			    <p class="card-text"><h5>Victoria Rabii</h5>
-			    <h6>Undergraduate researcher</h6></p>
-			    <p class="card-text"></p>
-			  </div>
-			</div>			
-		</div>
-		<div class="col-lg-6">
-			<div class="card mx-auto profile">
-			  <img id="emalee_profile" class="img-thumbnail img-fluid profile profile_img" style="width:263px;height:auto;display:none;" alt="...">
-			  <img id="emalee_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
-			  <div class="card-body">
-			    <p class="card-text"><h5>Emalee Payne</h5>
-				    <h6>Undergraduate researcher</h6>
+			    <p class="card-text"><h5>Grace Mavodza</h5>
+				    <h6>Postdoctoral fellow</h6>
 				</p>
 			    <p class="card-text"></p>
 			  </div>
 			</div>			
-		</div>
-	</div>
-	<div class="row">
+		</div>	
 		<div class="col-lg-6">
 			<div class="card mx-auto profile">
 			  <img id="yeeA_profile" class="img-thumbnail img-fluid profile profile_img" style="width:245px;height:auto;display:none;" alt="...">
@@ -96,10 +83,12 @@
 			    <p class="card-text"></p>
 			  </div>
 			</div>			
-		</div>
+		</div>		
+	</div>
+	<div class="row">
 		<div class="col-lg-6">
 			<div class="card mx-auto profile">
-			  <img id="vTra_profile" class="img-thumbnail img-fluid profile profile_img" style="width:302px;height:auto;display:none;" alt="...">
+			  <img id="vTra_profile" class="img-thumbnail img-fluid profile profile_img" style="width:320px;height:auto;display:none;" alt="...">
 			  <img id="vTra_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
 			  <div class="card-body">
 			    <p class="card-text"><h5>Vy Tra</h5>
@@ -108,15 +97,13 @@
 			    <p class="card-text"></p>
 			  </div>
 			</div>			
-		</div>
-	</div>
-	<div class="row">			
+		</div>			
 		<div class="col-lg-6">
 			<div class="card mx-auto profile">
-			  <img id="graceM_profile" class="img-thumbnail img-fluid profile profile_img" style="width:302px;height:auto;display:none;" alt="...">
-			  <img id="graceM_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
+			  <img id="emalee_profile" class="img-thumbnail img-fluid profile profile_img" style="width:251px;height:auto;display:none;" alt="...">
+			  <img id="emalee_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
 			  <div class="card-body">
-			    <p class="card-text"><h5>Grace Mavodza</h5>
+			    <p class="card-text"><h5>Emalee Payne</h5>
 				    <h6>Undergraduate researcher</h6>
 				</p>
 			    <p class="card-text"></p>
@@ -159,15 +146,6 @@
 					skeleton.style.display = 'none';
 					img.style.display = 'block';
 				});
-		imageLazyLoad("images/Victoria_profile.png",
-				()=>{
-					let skeleton = document.getElementById('victoria_profile_skeleton');
-					let img = document.getElementById('victoria_profile');
-					img.src = "images/Victoria_profile.png"
-					skeleton.style.display = 'none';
-					img.style.display = 'block';
-				});
-
 		imageLazyLoad("images/Emalee_profile.png",
 				()=>{
 					let skeleton = document.getElementById('emalee_profile_skeleton');
