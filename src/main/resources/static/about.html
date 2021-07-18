@@ -45,21 +45,34 @@
 		</div>
 		<div class="col-lg-6">
 			<div class="card mx-auto profile">
-			  <img id="catherine_profile" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:auto;display:none;" alt="...">
-			  <img id="catherine_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
+			  <img id="lilia_profile" class="img-thumbnail img-fluid profile profile_img" style="width:251px;height:auto;display:none;" alt="...">
+			  <img id="lilia_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:251px;height:335px;" alt="...">			  
 			  <div class="card-body">
-			    <p class="card-text"><h5>Dr. Catherine Vaughn</h5>
+			    <p class="card-text"><h5>Dr. Lilia Gheghiani</h5>
 			    <h6>Postdoctoral Fellow</h6>
-			    <h6>AACR Lung Cancer Postdoctoral Research Fellow</h6></p>			    
+			    </p>			    
 			    <hr/>
-			    <p class="card-text">My research interest lies in identifying inherent vulnerabilities in cancer cells in order to develop more efficient treatments for the disease.  My long-term career goal is to study potential new therapeutic avenues in the field of cancer research as an independent investigator. This line of research will be significantly beneficial in the treatment and prevention of lung cancer, and will help to elucidate the mechanism underlying the cause of the disease.</p>
-				<h6><strong>Phone:</strong><span style="margin=left:2px">804-827-1428</span></h6>			    
-				<h6><strong>Email:</strong><span style="margin=left:2px">vaughanca@vcu.edu</span></h6>			    
+			    <!-- <p class="card-text">My research interest lies in identifying inherent vulnerabilities in cancer cells in order to develop more efficient treatments for the disease.  My long-term career goal is to study potential new therapeutic avenues in the field of cancer research as an independent investigator. This line of research will be significantly beneficial in the treatment and prevention of lung cancer, and will help to elucidate the mechanism underlying the cause of the disease.</p>
+				<h6><strong>Phone:</strong><span style="margin=left:2px">804-827-1428</span></h6>-->			    
+				<h6><strong>Email:</strong><span style="margin=left:2px">Lilia.Gheghiani@vcuhealth.org</span></h6>			    
 			  </div>
 			</div>			
 		</div>		
 	</div>
 	<div class="row">
+		<div class="col-lg-6">
+			<div class="card mx-auto profile">
+			  <img id="shoja_profile" class="img-thumbnail img-fluid profile profile_img" style="width:258px;height:auto;display:none;" alt="...">
+			  <img id="shoja_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:258px;height:320px;" alt="...">			  
+			  <div class="card-body">
+			    <p class="card-text"><h5>Shoja Hajira</h5>
+				    <h6>Postdoctoral Fellow</h6>
+				</p>
+			    <hr/>
+			    <h6><strong>Email:</strong><span style="margin=left:2px">Shoja.Hajira@vcuhealth.org</span></h6>
+			  </div>
+			</div>			
+		</div>	
 		<div class="col-lg-6">
 			<div class="card mx-auto profile">
 			  <img id="yeeA_profile" class="img-thumbnail img-fluid profile profile_img" style="width:245px;height:auto;display:none;" alt="...">
@@ -68,10 +81,13 @@
 			    <p class="card-text"><h5>Yee Aung</h5>
 				    <h6>Undergraduate researcher</h6>
 				</p>
+				<hr/>
 			    <p class="card-text"></p>
 			  </div>
 			</div>			
-		</div>
+		</div>				
+	</div>	
+	<div class="row">
 		<div class="col-lg-6">
 			<div class="card mx-auto profile">
 			  <img id="vTra_profile" class="img-thumbnail img-fluid profile profile_img" style="width:320px;height:auto;display:none;" alt="...">
@@ -83,9 +99,7 @@
 			    <p class="card-text"></p>
 			  </div>
 			</div>			
-		</div>				
-	</div>
-	<div class="row">
+		</div>
 		<div class="col-lg-6">
 			<div class="card mx-auto profile">
 			  <img id="emalee_profile" class="img-thumbnail img-fluid profile profile_img" style="width:251px;height:auto;display:none;" alt="...">
@@ -97,7 +111,9 @@
 			    <p class="card-text"></p>
 			  </div>
 			</div>			
-		</div>
+		</div>				
+	</div>
+	<div class="row">
 		<div class="col-lg-6">
 			<div class="card mx-auto profile">
 			  <img id="tyler_profile" class="img-thumbnail img-fluid profile profile_img" style="width:213px;height:auto;display:none;" alt="...">
@@ -138,14 +154,6 @@
 					img.style.display = 'block';
 				});
 		
-		imageLazyLoad("images/Catherine_profile.png",
-				()=>{
-					let skeleton = document.getElementById('catherine_profile_skeleton');
-					let img = document.getElementById('catherine_profile');
-					img.src = "images/Catherine_profile.png"
-					skeleton.style.display = 'none';
-					img.style.display = 'block';
-				});
 		imageLazyLoad("images/Emalee_profile.png",
 				()=>{
 					let skeleton = document.getElementById('emalee_profile_skeleton');
@@ -155,8 +163,8 @@
 					img.style.display = 'block';
 				});
 
-		let profiles = ['yeeA_profile', 'vTra_profile', 'tyler_profile'];
-		let paths = ['images/YeeAung.jpg','images/VyTra.jpg','images/TylerH.png'];
+		let profiles = ['lilia_profile','yeeA_profile', 'vTra_profile', 'tyler_profile', 'shoja_profile'];
+		let paths = ['images/Liliani.jpg','images/YeeAung.jpg','images/VyTra.jpg','images/TylerH.png', 'images/Shoja.jpg'];
 		
 		for(let i = 0; i < profiles.length; i++) {
 			lazyLoadCaller(profiles[i], paths[i]);	
