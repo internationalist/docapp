@@ -45,16 +45,14 @@
 		</div>
 		<div class="col-lg-6">
 			<div class="card mx-auto profile">
-			  <img id="shilpa_profile" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:auto;display:none;" alt="...">
-			  <img id="shilpa_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
+			  <img id="shoja_profile" class="img-thumbnail img-fluid profile profile_img" style="width:258px;height:auto;display:none;" alt="...">
+			  <img id="shoja_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:258px;height:320px;" alt="...">			  
 			  <div class="card-body">
-			    <p class="card-text"><h5>Dr. Shilpa Singh</h5>
-			    <h6>Postdoctoral Fellow</h6>
-			    <h6>AACR Lung Cancer Postdoctoral Research Fellow</h6></p>			    
+			    <p class="card-text"><h5>Shoja Hajira</h5>
+				    <h6>Postdoctoral Fellow</h6>
+				</p>
 			    <hr/>
-			    <p class="card-text">My major research interest is to determine how and why normal cells turn to cancer cells and how to prevent this process. As a graduate student, I have investigated contributions of oncogenes (MDM2 and gain of function p53 mutation) in deregulation of normal or cancer cells,   and have identified mechanisms by which oncogenic p53 mutants confer targetable dependency on DNA replication in lung cancer cells for the first time. Currently, I am investigating how oncogenic p53 mutants confer dependency on checkpoint signaling during DNA replication and mitosis of lung cancer cells and tumors.  I hope to uncover novel un-explored small molecule inhibitors to therapeutically target proliferation of lung cancers with oncogenic p53 mutation without affecting the normal WT p53 containing cells..</p>
-			    <h6><strong>Phone:</strong><span style="margin=left:2px">804-827-1376</span></h6>
-			    <h6><strong>Email:</strong><span style="margin=left:2px">singhs7@vcu.edu </span></h6>			    			    
+			    <h6><strong>Email:</strong><span style="margin=left:2px">Shoja.Hajira@vcuhealth.org</span></h6>
 			  </div>
 			</div>			
 		</div>		
@@ -62,13 +60,14 @@
 	<div class="row">
 		<div class="col-lg-6">
 			<div class="card mx-auto profile">
-			  <img id="meganT_profile" class="img-thumbnail img-fluid profile profile_img" style="width:302px;height:auto;display:none;" alt="...">
-			  <img id="meganT_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
+			  <img id="aaron_profile" class="img-thumbnail img-fluid profile profile_img" style="width:302px;height:auto;display:none;" alt="...">
+			  <img id="aaron_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
 			  <div class="card-body">
-			    <p class="card-text"><h5>Megan Thompson</h5>
+			    <p class="card-text"><h5>Aaron Valentine</h5>
 				    <h6>Graduate researcher</h6>
 				</p>
-			    <p class="card-text"></p>
+				<hr/>
+			    <h6><strong>Email:</strong><span style="margin=left:2px">valentinead2@vcu.edu</span></h6>
 			  </div>
 			</div>			
 		</div>	
@@ -117,14 +116,6 @@
 	<script>
 	$(document).ready(()=>{
 
-		imageLazyLoad("images/Shilpa_profile.png",
-				()=>{
-					let skeleton = document.getElementById('shilpa_profile_skeleton');
-					let img = document.getElementById('shilpa_profile');
-					img.src = "images/Shilpa_profile.png"
-					skeleton.style.display = 'none';
-					img.style.display = 'block';
-				});
 		imageLazyLoad("images/drspdeb_profile.png",
 				()=>{
 					let skeleton = document.getElementById('spdeb_profile_skeleton');
@@ -134,8 +125,8 @@
 					img.style.display = 'block';
 				});
 
-		let profiles = ['patrick_profile', 'annaB_profile', 'meganT_profile'];
-		let paths = ['images/Patrick.jpg', 'images/AnnaBerberoglu.jpg', 'images/MeganT.jpg'];
+		let profiles = ['patrick_profile', 'annaB_profile', 'aaron_profile', 'shoja_profile'];
+		let paths = ['images/Patrick.jpg', 'images/AnnaBerberoglu.jpg', 'images/Aaron.jpg', 'images/Shoja.jpg'];
 		
 		for(let i = 0; i < profiles.length; i++) {
 			lazyLoadCaller(profiles[i], paths[i]);	
