@@ -57,20 +57,7 @@
 			</div>			
 		</div>		
 	</div>
-	<div class="row">
-		<div class="col-lg-6">
-			<div class="card mx-auto profile">
-			  <img id="santra_profile" class="img-thumbnail img-fluid profile profile_img" style="width:322px;height:auto;display:none;" alt="...">
-			  <img id="santra_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:322px;height:335px;" alt="...">			  
-			  <div class="card-body">
-			    <p class="card-text"><h5>Dr. Manoranjan Santra</h5>
-				    <h6>Postdoctoral Fellow</h6>
-				</p>
-			    <hr/>
-			    <h6><strong>Email:</strong>manoranjansantra@gmail.com <span style="margin=left:2px"></span></h6>
-			  </div>
-			</div>			
-		</div>	
+	<div class="row">	
 		<div class="col-lg-6">
 			<div class="card mx-auto profile">
 			  <img id="selma_profile" class="img-thumbnail img-fluid profile profile_img" style="width:241px;height:auto;display:none;" alt="...">
@@ -85,47 +72,6 @@
 			</div>			
 		</div>				
 	</div>	
-	<div class="row">
-		<div class="col-lg-6">
-			<div class="card mx-auto profile">
-			  <img id="vTra_profile" class="img-thumbnail img-fluid profile profile_img" style="width:320px;height:auto;display:none;" alt="...">
-			  <img id="vTra_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
-			  <div class="card-body">
-			    <p class="card-text"><h5>Vy Tra</h5>
-				    <h6>Undergraduate researcher</h6>
-				</p>
-			    <p class="card-text"></p>
-			  </div>
-			</div>			
-		</div>
-		<div class="col-lg-6">
-			<div class="card mx-auto profile">
-			  <img id="purva_profile" class="img-thumbnail img-fluid profile profile_img" style="width:227px;height:auto;display:none;" alt="...">
-			  <img id="purva_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
-			  <div class="card-body">
-			    <p class="card-text"><h5>Purva Nayam</h5>
-				    <h6>Undergraduate researcher</h6>
-				</p>
-				<hr/>
-			    <h6><strong>Email:</strong><span style="margin=left:2px">nayampv@vcu.edu</span></h6>
-			  </div>
-			</div>			
-		</div>				
-	</div>
-	<div class="row">
-		<div class="col-lg-6">
-			<div class="card mx-auto profile">
-			  <img id="tyler_profile" class="img-thumbnail img-fluid profile profile_img" style="width:213px;height:auto;display:none;" alt="...">
-			  <img id="tyler_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:300px;height:335px;" alt="...">			  
-			  <div class="card-body">
-			    <p class="card-text"><h5>Tyler Heath</h5>
-				    <h6>Undergraduate researcher</h6>
-				</p>
-			    <p class="card-text"></p>
-			  </div>
-			</div>			
-		</div>		
-	</div>
 </div>
 
 <div id="footer-component"><footermodule></footermodule></div>
@@ -153,8 +99,8 @@
 					img.style.display = 'block';
 				});
 		
-		let profiles = ['lilia_profile','selma_profile', 'vTra_profile', 'purva_profile', 'tyler_profile', 'santra_profile'];
-		let paths = ['images/Liliani.jpg','images/selma.jpg','images/VyTra.jpg','images/Purva.jpg','images/TylerH.png', 'images/drsantra.png'];
+		let profiles = ['lilia_profile','selma_profile'];
+		let paths = ['images/Liliani.jpg','images/selma.jpg'];
 		
 		for(let i = 0; i < profiles.length; i++) {
 			lazyLoadCaller(profiles[i], paths[i]);	
