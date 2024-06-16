@@ -33,9 +33,18 @@
 		    </div>
 		    <div class="carousel-item">
 				<div class="card" style="background-color:#192a56;color:white;">
-				  <img src="images/shutterstock_599450876-1-750x500.jpg" class="card-img-top" alt="..." style="width:100%;height:auto;;">
+				  <img id='carousel-2' class="card-img-top" alt="..." style="width:100%;height:auto;display:none;">
+				  <img class="w-100" id="carousel-skeleton-2" src="images/clear.png" style="width:100%;height:500px;" alt="First slide">
+				  <div class="card-body">
+				    <p class="card-text font-weight-bold">Researchers at DebLabs have been at the forefront of cancer research for over 25 years.</p>
+				  </div>
+				</div>		    
+		    </div>		    
+		    <div class="carousel-item">
+				<div class="card" style="background-color:#192a56;color:white;">
+				  <img src="images/dna.jpg" class="card-img-top" alt="..." style="width:100%;height:auto;;">
 				  <div class="card-body mx autos">
-				    <p class="card-text font-weight-bold">Scientists have discovered how the most important gene in preventing human cancer, p53, is able to stop the development of lymphoma and potentially other types of cancer.</p>
+				    <p class="card-text font-weight-bold">The gene p53, is able to stop the development of lymphoma and potentially other types of cancer.</p>
 				  </div>
 				</div>		    
 		    </div>
@@ -92,6 +101,18 @@
 					addClass('carousel-1', 'carouselImg');
 					skeleton.style.display = 'none';
 					carImg.style.display = 'block';
+				});
+		
+		imageLazyLoad("images/team.jpg",
+				()=>{
+					let skeleton = document.getElementById('carousel-skeleton-2');
+					let carImg = document.getElementById('carousel-2');
+					carImg.src = "images/team.jpg"
+					removeClass('carousel-2', 'carouselImgLoading');
+					addClass('carousel-2', 'carouselImg');
+					skeleton.style.display = 'none';
+					carImg.style.display = 'block';
 				});		
+		
 	});
 	</script>  	

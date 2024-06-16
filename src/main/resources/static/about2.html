@@ -45,18 +45,33 @@
 		</div>
 		<div class="col-lg-6">
 			<div class="card mx-auto profile">
-			  <img id="shoja_profile" class="img-thumbnail img-fluid profile profile_img" style="width:258px;height:auto;display:none;" alt="...">
-			  <img id="shoja_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:258px;height:320px;" alt="...">			  
+			  <img id="brandon_profile" class="img-thumbnail img-fluid profile profile_img" style="width:220px;height:auto;display:none;" alt="...">
+			  <img id="brandon_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:220px;height:312px;" alt="...">			  
 			  <div class="card-body">
-			    <p class="card-text"><h5>Shoja Hajira</h5>
-				    <h6>Postdoctoral Fellow</h6>
+			    <p class="card-text"><h5>Brandon Velasco, BS</h5>
+				    <h6>Graduate Student</h6>
 				</p>
 			    <hr/>
-			    <h6><strong>Email:</strong><span style="margin=left:2px">Shoja.Hajira@vcuhealth.org</span></h6>
+			    <h6><strong>Email:</strong><span style="margin=left:2px">velascobg@vcu.edu</span></h6>
 			  </div>
 			</div>			
 		</div>		
 	</div>
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="card mx-auto profile">
+			  <img id="venus_profile" class="img-thumbnail img-fluid profile profile_img" style="width:415px;height:auto;display:none;" alt="...">
+			  <img id="venus_profile_skeleton" src="images/clear.png" class="img-thumbnail img-fluid profile profile_img" style="width:415px;height:312px;" alt="...">			  
+			  <div class="card-body">
+			    <p class="card-text"><h5>Venus Solanke</h5>
+				    <h6>Student Researcher</h6>
+				</p>
+			    <hr/>
+			    <h6><strong>Email:</strong><span style="margin=left:2px">solankevm@vcu.edu</span></h6>
+			  </div>
+			</div>			
+		</div>	
+	</div>	
 </div>
 
 <div id="footer-component"><footermodule></footermodule></div>
@@ -85,8 +100,8 @@
 					img.style.display = 'block';
 				});
 
-		let profiles = ['shoja_profile'];
-		let paths = ['images/Shoja.jpg'];
+		let profiles = ['brandon_profile', 'venus_profile'];
+		let paths = ['images/brandon.jpg', 'images/venus.jpg'];
 		
 		for(let i = 0; i < profiles.length; i++) {
 			lazyLoadCaller(profiles[i], paths[i]);	
